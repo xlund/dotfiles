@@ -40,3 +40,5 @@ alias work="$HOME/workspace"
 alias dow="$HOME/Downloads"
 
 alias email="aerc"
+
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.config/ --work-tree=$HOME'
