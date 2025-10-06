@@ -1,7 +1,6 @@
-# Themes can be found at
-# https://github.com/alacritty/alacritty-theme
-# These are cloned into /themes and can be accessed by importing here.
-# If you are cloning this repo, you should clone this repo
+# Themes can be found at https://github.com/alacritty/alacritty-theme
+# I prefer to keep a local copy of the theme next to the .dotfile.
+# It is a bit redundant, but it makes the .config plug and play
 import = ["~/.config/alacritty/theme.toml"]
 
 [window]
