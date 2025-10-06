@@ -1,0 +1,37 @@
+# theme = "acme"
+theme = "base16_custom"
+
+[editor]
+rulers = [120]
+auto-save = true
+line-number = "relative"
+cursorline = true
+bufferline = "multiple"
+gutters = [ "diagnostics", "spacer" ]
+
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+cursor-line = "error" # Show inline diagnostics when the cursor is on the line
+other-lines = "disable" # Don't expand diagnostics unless the cursor is on the line
+
+[editor.soft-wrap]
+enable = true
+
+[editor.file-picker]
+hidden = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[keys.normal.C-r]
+f = [
+  ":sh maudfmt src/",
+  ":reload"
+]
+
+[editor.lsp]
+display-messages = true
+auto-signature-help = false

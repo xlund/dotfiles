@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+# jj
+
+alias jjs='jj log --limit 5'
+
+#ls 
+
+alias ls='ls --color=auto'
+alias l="ls -l"
+alias ll="ls -lahF"
+alias lls="ls -lahFtr"
+alias lc="ls -CF"
+alias la="ls -alh"
+
+# cp
+
+alias cp='cp -iv'
+alias mv='mv -iv'
+alias rm='rm -iv'
+
+# grep
+alias grep='grep --color=auto'
+
+# ping
+alias pg='ping 8.8.8.8'
+
+# time
+alias time="date | awk '{print \$4}'"
+
+
+# Rust
+alias cr="cargo run"
+alias cb="cargo build"
+
+# Personal
+
+# Directories
+alias work="$HOME/workspace"
+alias dow="$HOME/Downloads"
+
+alias email="aerc"

@@ -1,0 +1,69 @@
+[language-server.emmet-ls]
+args = ["--stdio"]
+command="emmet-ls"
+
+[[language]]
+name = "html"
+language-servers = ["vscode-html-language-server", "emmet-ls"]
+
+[[language]]
+name = "rust"
+auto-format = true
+
+roots = [
+  "Cargo.toml",
+  "Cargo.lock"
+]
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
+
+[[language]]
+name = "go"
+auto-format = true
+language-servers = ["gopls", "golangci-lint2-langserver"]
+formatter = { command = "goimports"}
+
+[language-server.golang-ci-lint2-langserver]
+command = "golang-ci-lint-langserver"
+
+[language-server.golang-ci-lint2-langserver.config]
+command = [
+  "golangci-ling",
+  "run",
+  "--output.json.path",
+  "stdout",
+  "--show-stats=false",
+  "--issues-exit-code=1"
+]
+
+[[language]]
+name = "sql"
+file-types = ["sql"]
+auto-format = true
+indent = {tab-width = 2, unit = " "}
+formatter = {command = "sleek"}
+language-servers = ["sqls"]
+
+[[language]]
+name = "java"
+scope = "source.java"
+file-types = ["java"]
+roots = ["pom.xml", "build.gradle", ".git"]
+language-servers = ["jdtls"]
+
+[language-server.jdtls]
+command = "jdtls"
+args = ["-data", "~/.cache/jdtls/workspace"]
+
+[[language]]
+name = "typescript"
+auto-format = true
+formatter = { command = 'prettier', args = ["--parser", "typescript"]}
+
+[[language]]
+name = "tsx"
+auto-format = true
+formatter = { command = 'prettier', args = ["--parser", "typescript"]}
+

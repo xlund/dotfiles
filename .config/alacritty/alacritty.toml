@@ -1,0 +1,21 @@
+# Themes can be found at
+# https://github.com/alacritty/alacritty-theme
+# These are cloned into /themes and can be accessed by importing here.
+# If you are cloning this repo, you should clone this repo
+import = ["~/.config/alacritty/theme.toml"]
+
+[window]
+padding.x = 10
+padding.y = 10
+
+decorations = "Buttonless"
+option_as_alt = "OnlyLeft"
+
+
+[font]
+normal.family = "TX-02"
+bold.family = "TX-02"
+italic.family = "TX-02"
+bold_italic.family = "TX-02"
+
+size = 16.0

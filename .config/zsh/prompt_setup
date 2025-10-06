@@ -1,0 +1,8 @@
+setopt PROMPT_SUBST
+
+parse_git_branch() {
+  git rev-parse --abbrev-ref HEAD 2>/dev/null
+}
+
+PS1='%F{blue}%1~%f %F{green}$(parse_git_branch)%f %# '
+
