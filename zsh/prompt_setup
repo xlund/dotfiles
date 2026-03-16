@@ -1,0 +1,9 @@
+setopt PROMPT_SUBST
+
+parse_git_branch() {
+  git rev-parse --abbrev-ref HEAD 2>/dev/null
+}
+
+NEWLINE=$'\n'
+PS1='%F{white}%~%f${NEWLINE}%g%B%n@%m%b $ '
+

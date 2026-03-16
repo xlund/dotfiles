@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+# jj
+
+alias jjs='jj log --limit 5'
+
+#ls 
+
+alias ls='ls --color=auto'
+alias ll="ls -lahF"
+alias la="ls -alh"
+
+# cp
+
+alias cp='cp -iv'
+alias mv='mv -iv'
+alias rm='rm -iv'
+
+# grep
+alias grep='grep --color=auto'
+
+# time
+alias time="date | awk '{print \$4}'"
+
+# mbsync
+alias mbsync="mbsync -a -c '$XDG_CONFIG_HOME/isync/mbsyncrc' && notmuch new --quiet"

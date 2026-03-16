@@ -1,0 +1,23 @@
+IMAPAccount posteo
+Host posteo.de
+User enas@posteo.com
+PassCmd "security find-generic-password -a enas@posteo.com -s mbsync -w"
+AuthMechs LOGIN
+TLSType IMAPS
+TLSVersions +1.3
+
+IMAPStore posteo-remote
+Account posteo
+
+MaildirStore posteo-local
+Path ~/mail/posteo/
+Inbox ~/mail/posteo/Inbox
+Subfolders Verbatim
+
+Channel posteo
+Far :posteo-remote:
+Near :posteo-local:
+Create Both
+Expunge Both
+Patterns *
+SyncState *

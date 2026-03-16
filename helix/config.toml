@@ -1,0 +1,18 @@
+theme = "custom_terminal_theme"
+
+[editor]
+rulers = [80, 120]
+
+[editor.soft-wrap]
+enable = true
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+nnbsp = "␣"
+tab = "→"
+newline = "↵"
+tabpad = "·" 

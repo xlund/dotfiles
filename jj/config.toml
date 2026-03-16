@@ -1,0 +1,9 @@
+#:schema https://docs.jj-vcs.dev/latest/config-schema.json
+
+[user]
+name = "Erik Naslund"
+email = "erik.naslund@posteo.com"
+
+[ui]
+default-command = "log"
+

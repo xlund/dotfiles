@@ -1,0 +1,15 @@
+#!/bin/bash
+# Reference Maildir folders for tagging
+notmuch tag +posteo "folder:/posteo/"
+
+# Handle sent and spam mail by IMAP folders
+# e.g. if Gmail marks it as spam, tag it as spam
+notmuch tag +inbox "folder:/Inbox/" and not tag:inbox
+notmuch tag +sent "folder:/Sent/" and not tag:sent
+notmuch tag +spam "folder:/Spam/" and not tag:spam
+notmuch tag +archived "folder:/Archive/" and not tag:archived
+notmuch tag +deleted "folder:/Trash/" and not tag:deleted
+
+
+# Remove the new tag from all new emails
+notmuch tag -new tag:new

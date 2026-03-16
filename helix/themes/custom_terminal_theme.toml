@@ -1,0 +1,11 @@
+inherits = "base16_terminal"
+
+"ui.gutter" = {bg = "default"}
+"ui.statusline" = {bg = "default"}
+"ui.linenr" = {bg = "default", fg ="gray"}
+"ui.linenr.selected" = {bg = "gray", fg="white"}
+
+"ui.selection" = {fg="white", bg="gray"}
+"ui.virtual.whitespace" = {fg="gray"}
+
+"ui.virtual.ruler" = {fg="black", bg = "black"}
